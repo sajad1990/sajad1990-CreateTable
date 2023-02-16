@@ -68,7 +68,8 @@ public class CreateATable {
     public void problem1(){
 //        write your SQL logic in a single line in the problem1.sql file.
         String sql = FileUtil.parseSQLFile("problem1.sql");
-
+        CreateATable song;
+         
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
